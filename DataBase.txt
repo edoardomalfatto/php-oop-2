@@ -1,0 +1,13 @@
+t_users
+
+
+
+id					numero		AUTO_INCREMENT				NOT NULL PRIMARY KEY UNIQUE		
+nome					stringa		VARCHAR(50)				NOT NULL
+cognome					stringa		VARCHAR(50)				NOT NULL 
+username				stringa		VARCHAR(50)				NOT NULL UNIQUE
+password				stringa		VARCHAR(50)				NOT NULL
+email  					stringa		VARCHAR(50)				NOT NULL
+data_iscrizione				data		DATE					NOT NULL
+permessi				stringa		VARCHAR(20)				NOT NULL
+link_affiliato                          booleano	BOOLEAN					NOT NULL
