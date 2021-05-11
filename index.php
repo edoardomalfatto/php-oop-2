@@ -21,7 +21,6 @@ class User {
     public $password;
     public $email;
     private $data_iscrizione;
-    public $permessi;
     public $link_affiliato;
 
     //Costruttore
@@ -48,9 +47,26 @@ class User {
     public function getName() {
         return $this->nome; 
     }
-
-
  
+}
+
+class SpecialUser extends User {
+    public $tipologia;
+    public $permessi;
+
+
+    public function __construct($_id)
+    {
+        // call Grandpa's constructor
+        parent::__construct($_id);
+        function __construct($_tipologia) {
+            $this->tipologia = $_tipologia;
+        }
+    }
+
+    public function setLivello($livello)   {
+        $this->livello = $livello;
+    }
 }
 
 //Istanze
