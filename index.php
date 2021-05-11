@@ -54,15 +54,15 @@ class SpecialUser extends User {
     public $tipologia;
     public $permessi;
 
+//Requisito aggiuntivo di SpecialUser non funzionante
 
-    public function __construct($_id)
+ /*    public function __construct($_id)
     {
-        // call Grandpa's constructor
         parent::__construct($_id);
         function __construct($_tipologia) {
             $this->tipologia = $_tipologia;
         }
-    }
+    } */
 
     public function setLivello($livello)   {
         $this->livello = $livello;
